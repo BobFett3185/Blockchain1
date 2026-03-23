@@ -1,13 +1,41 @@
+SGACoin Blockchain Implementation
+An implementation from scratch of a basic blockchain system featuring smart contracts and elliptic curve cryptography.
 
-An implementation from scratch of a basic blockchain system
+Technical Summary
+This project demonstrates the internal mechanics of a decentralized ledger. It is built as a modular system including a core engine, a virtual machine for smart contracts, and a web-based management interface.
 
-SGACoin Blockchain with Smart Contracts 
+Core Components
+Blockchain Engine
+Proof-of-Work mining algorithm with adjustable difficulty.
 
-Tech stack: JavaScript, Node.js, crypto.js, elliptic.js
+SHA-256 hashing for block integrity and chain linking.
 
-• Built a blockchain from scratch with proof-of-work mining, wallet transactions, and elliptic curve cryptography (secp256k1) for secure digital transactions.
+Transaction pool management for pending data.
 
-• Implemented a virtual machine supporting deployable JavaScript smart contracts with persistent on-chain state.
+Security and Identity
+Implementation of secp256k1 elliptic curve cryptography.
 
-• Exposed blockchain functionality via an Express.js REST API and React frontend.
+Digital signature verification for all on-chain movements.
 
+Public/Private key pair utility for wallet management.
+
+Smart Contract VM
+A custom environment for deploying JavaScript-based contracts.
+
+Persistent on-chain state management for decentralized logic.
+
+Transaction-triggered contract execution.
+
+System Architecture
+Backend: Node.js and Express.js REST API.
+
+Frontend: React.js dashboard for chain visualization.
+
+Cryptography: crypto.js and elliptic.js libraries.
+
+Setup Instructions
+Install dependencies: npm install
+
+Generate a wallet: node generateKeys.js
+
+Start the node: node Main.js
