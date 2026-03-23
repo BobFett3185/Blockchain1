@@ -39,3 +39,5 @@ Install dependencies: npm install
 Generate a wallet: node generateKeys.js
 
 Start the node: node Main.js
+
+Would you like me to write a specific section detailing how the "Smart Contract VM" actually processes the JavaScript code?
